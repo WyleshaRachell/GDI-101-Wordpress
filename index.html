@@ -61,7 +61,7 @@
       <section>
         <h3>Set up your computer for today</h3>
         <hr>
-        <p>If you haven't yet, please navigate to <a href="https://wordpress.org/download" target="_blank">https://wordpress.org/download</a> and install <strong>WordPress </strong> on your laptop.</p>
+        <p>If you haven't yet, please download Sublime Text <a href="http://www.sublimetext.com/3" target="_blank">http://www.sublimetext.com/3</a>
         <hr>
         <img src="images/chrome_logo.jpg"/>
         <p>We recommend that you install <strong>Google Chrome</strong>, <br/>if you haven't already.</p>
@@ -314,11 +314,19 @@
                     <li>Click Open WebStart Page in the Application</li>
                     <li>Click phpMyAdmin under MySQL</li>
                   </ul>
+                  <img src="images/mamp.png" height="auto" width="550" alt="">
                 </li>
+              </ul>
+            </section>
+            <section>
+              <h3>Create a MySQL database</h3>
+              <small>This is how you store all your information posted on the website</small>
+              <ul>
                 <li>WAMP
-                  <ul>
+                  <ul style="clear:both">
                     <li>Click the WAMP icon and select localhost</li>
-                    <li>Select MySQL>phpMyAdmin</li>
+                    <li>Select phpMyAdmin</li>
+                    <img src="images/install-wordpress-localhost-wamp2.jpg" width="600" alt="">
                   </ul>
                 </li>
               </ul>
@@ -331,10 +339,10 @@
             </section>
             <section>
               <h3>Wordpress Config</h3>
-              <small>Here we tell Wordpress were to get its data</small>
+              <small>Here we tell Wordpress were to get its data. Edit and save wp-config-sample.php as wp-config.php</small>
               <ul>
-                <li>MAMP : /Applications/MAMP/htcdocs/wordpress/wp-confg.php</li>
-                <li>WAMP : C:/wamp/www/wp-confg.php</li>
+                <li>MAMP : /Applications/MAMP/htcdocs/wordpress/wp-config.php</li>
+                <li>WAMP : C:/wamp/www/wp-config.php</li>
               </ul>
               <pre style="margin:0">
                 <code style="padding:0">
@@ -345,7 +353,7 @@
                   define('DB_USER', 'root');
 
                   /** MySQL database password */
-                  define('DB_PASSWORD', 'root');
+                  define('DB_PASSWORD', 'root'); //WAMP => define('DB_PASSWORD', '');
 
                   /** MySQL hostname */
                   define('DB_HOST', 'localhost');
@@ -354,7 +362,10 @@
             </section>
             <section>
               <h3>Load Wordpress</h3>
-              <p style="font-size:85%;"><strong>Example</strong>: http://localhost:8888/wordpress</p>
+              <hr>
+              <p style="font-size:85%;"><strong>MAMP</strong>: http://localhost:8888/wordpress</p>
+              <p style="font-size:85%;"><strong>WAMP</strong>: http://localhost/wordpress</p>
+              <hr>
               <p>Follow the prompts and done!</p>
 
             </section>
