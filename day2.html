@@ -108,15 +108,6 @@
         <section>
           <h3>Let's develop it!</h3>
           <p>Visit your WordPress installation's dashboard</p>
-  <pre style="margin:0">
-    <code style="padding:0">
-    //Resolve FTP Connection Locally
-    if(is_admin()) {
-      add_filter('filesystem_method', create_function('$a', 'return "direct";' ));
-      define( 'FS_CHMOD_DIR', 0751 );
-    }
-    </code>
-  </pre>
         </section>
 
        <section>
@@ -276,6 +267,19 @@
         		<li class="fragment"><span class="green">Posts</span> can be used lots of ways depending on the kind of site you're building, but are generally for more time-sensitive updates</li>
         	</ul>
         	<p class="fragment pink">Pages are Timeless; Posts are Timely</p>
+        </section>
+
+        <section>
+        <h3>FTP Override</h3>
+<pre style="margin:0">
+    <code style="padding:0">
+    //Resolve FTP Connection Locally
+    if(is_admin()) {
+      add_filter('filesystem_method', create_function('$a', 'return "direct";' ));
+      define( 'FS_CHMOD_DIR', 0751 );
+    }
+    </code>
+</pre>
         </section>
 
         <section>
