@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Intro to WordPress || Girl Develop It Atlanta</title>
+
+		<meta name="description" content="This is a Girl Develop It WordPress curriculum. The course is intended to be four part session, lasting 4 weels. I hope that you will build on this curriculum and turn it into an even more awesome class. Oh, and WordPress is awesome! Go Girl Developers!">
+
+		<meta name="author" content="Girl Develop It">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<link rel="stylesheet" href="reveal/css/reveal.css">
+		<link rel="stylesheet" href="reveal/css/theme/gdilight.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<!-- light editor<link rel="stylesheet" href="lib/css/light.css">-->
+		<!-- dark editor--><link rel="stylesheet" href="reveal/lib/css/light.css">
+
+		<!-- If use the PDF print sheet so students can print slides-->
+		
+		<link rel="stylesheet" href="reveal/css/print/pdf.css" type="text/css" media="print">
+    <link rel="stylesheet" href="reveal/css/custom.css" type="text/css">
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides" style="top:45%;">
+			  <!-- Opening slide -->
+			  <!-- WiFi Info -->
+
+        <section id="beginning-slide">
+          <img src="images/gdi_logo_badge.png" style="max-width:300px; border:none; box-shadow: none;" />
+          <h2>WordPress 101</h2>
+          <p>
+            <small>With Wylesha Rachell &amp; Matt Stills</small>
+          </p>
+          <p>
+            <small><a href="mailto:wfield1@gmail">wfield1@gmail</a> &#8226; </small>  
+            <small><a href="http://wylesharachell.com" target="_blank">wylesharachell.com</a> ||</small>
+            <small><a href="matthewleestills@gmail.com">wfield1@gmail</a> &#8226; </small>  
+            <small><a href="http://www.mattstills.com/" target="_blank">mattstills.com</a></small>
+          </p>
+        
+          <p>
+            Slides located at: <a href="#">Slides Link</a>
+          </p>
+        </section>
+
+        <section>
+          <h3>GoDaddy - Quick and Easy</h3>
+
+          <small>To Install WordPress on Your Hosting Account</small>
+
+          <ul>
+            <li>Log in to your Account Manager.</li>
+            <li>Click Web Hosting.</li>
+            <li>Next to the hosting account you want to use, click Manage.</li>
+            <li>Go to Applications in the top menu</li>
+            <li>Select the Wordpress Icon in the Content Management Section</li>
+            <li>Select install application</li>
+            <li>Domain — Select the domain on your account you want to use.</li>
+            <li>Directory — Enter the directory after the domain name where you want to install WordPress. If you want the domain name itself to use WordPress, the directory field should only have "/" entered.</li>
+            <li>If you don't have a directory, you can create one in the File Manager Section</li>
+            <li>Enter a Username, a Password (and its confirmation), and an Email Address.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>BlueHost - Quick and Easy</h3>
+
+          <small>To Install WordPress on Your Hosting Account</small>
+
+          <ul>
+            <li>Log into Bluehost</li>
+            <li>Navigate to the MOJO Marketplace section inside cPanel.</li>
+            <li>Click the One-Click Installs icon.</li>
+            <li>Choose WordPress.</li>
+            <li>Click the Start button.</li>
+            <li>Choose the domain name to install it to.</li>
+            <li>In the field next to the domain, you can enter a subfolder such as 'blog'</li>
+            <li>Verify that the email address, username and password for the new Wordpress installation is correct in advanced options</li>
+            <li>Follow prompts and select install now</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Advanced Method</h3>
+          <ul>
+            <li>Download a FTP client, such as FileZilla</li>
+            <li>Setup a FTP user your hosting account</li>
+            <li>Download a clean installation of Wordpress</li>
+            <li>Create a database in your hosting account</li>
+            <li>Edit the wp-config file with the database info</li>
+            <li>Create a new directory and link it with your domain name</li>
+            <li>Login to your hosting via Filezilla</li>
+            <li>Drag and drop your wordpress installation into that directory</li>
+            <li>Done!</li>
+          </ul>
+        </section>
+    
+
+
+       <!-- Question-->
+        <section>
+          <h3>Questions?</h3>
+          <p>We're here to help!</p>
+          <img src="images/nick-young-confused-face.jpg" width="505" alt="Confused? Let us help!" />
+          <p>
+          	Email:<a href="mailto:wfield1@gmail">Wylesha Rachell</a> || 
+          	<a href="mailto:matthewleestills@gmail.com">Matt Stills</a><br/>  
+          </p>
+        </section>
+			</div>
+  		<footer>
+        <div class="copyright">
+          Intro to WordPress | Girl Develop It Atlanta |
+          <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png" /></a>
+        </div>
+      </footer>
+		</div>
+		<script src="reveal/lib/js/head.min.js"></script>
+		<script src="reveal/js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'reveal/plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'reveal/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'reveal/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
